@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,6 +7,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      dropShadow: {
+        'text-yellow': '-2px 0px 0px #FFCA18',
+      },
+      fontFamily:{
+        sans: ['var(--font-poppins)'],
+        passeroOne: ['var(--font-Passero_One)'],
+      },
+      colors:{
+        primary: "#880208",
+        secondary: "#FFCA18",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
